@@ -1,3 +1,4 @@
+![Tech World logo](https://user-images.githubusercontent.com/75572462/123730963-e1446180-d8b4-11eb-9c95-a7c15be6c368.jpg)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Hitesh03-techworld/TechWorld/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
