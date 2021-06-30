@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hoofle</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <div class="leftlinks">
+                        <a href="#" class="leftlinkone">Logout⇱</a>
+                    </div>
+                    <center>
+                        <img src="Hoofle Logo.png" class="navimg">
+                    </center>
+                    <div class="rightlinks">
+                        <a href="#" class="leftlinkone">Home  🏠</a>
+                        <a href="#" class="leftlinktwo">Profile  🙎‍♂️</a>
+                        <a href="#" class="leftlinkthree">More</a>
+                    </div>
+                </nav>
+            </div>
+                <div class="wrapper">
+                    <div class="search-box">
+                        <div class="serchbar">
+                            <input type="text" class="search" placeholder="🔎︎ Search">
+                        </div>
+                        <div class="search-icon">
+                            <a href="" class="search-icons">🔎</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="heading">
+                        <h1>Post Whats's In Your Mind</h1>
+                    </div>
+                    <div class="comment">
+                        <textarea name="" id="" cols="50" rows="10" placeholder="Post Here &mapstodown;" class="text-area"></textarea>
+                    </div>
+                </div>
+                <div class="clock">
+                    <div class="display">
+              </div>
+              </div>
+        </div>
+    </body>
+    <script>
+        setInterval(function(){
+          const clock = document.querySelector(".display");
+          let time = new Date();
+          let sec = time.getSeconds();
+          let min = time.getMinutes();
+          let hr = time.getHours();
+          let day = 'AM';
+          if(hr > 12){
+            day = 'PM';
+            hr = hr - 12;
+          }
+          if(hr == 0){
+            hr = 12;
+          }
+          if(sec < 10){
+            sec = '0' + sec;
+          }
+          if(min < 10){
+            min = '0' + min;
+          }
+          if(hr < 10){
+            hr = '0' + hr;
+          }
+          clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+        });
+      </script>
+  
+</html>
